@@ -1,5 +1,7 @@
 package io.github.roberthahagetit.robertsrandomthings;
 
+import io.github.roberthahagetit.robertsrandomthings.item.ModItemGroups;
+import io.github.roberthahagetit.robertsrandomthings.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ public class RobertsRandomItems implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
