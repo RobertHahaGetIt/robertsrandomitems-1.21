@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "robertsrandomitems",
+	"version": "${version}",
+	"name": "RobertsRandomItems",
+	"description": "This is a mod adding random items I wanted on my SMP",
+	"authors": [
+		"RobertHahaGetIt"
+	],
+	"contact": {
+		"homepage": "https://github.com/RobertHahaGetIt",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/robertsrandomitems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.roberthahagetit.robertsrandomthings.RobertsRandomItems"
+		],
+		"fabric-datagen": [
+			"io.github.roberthahagetit.robertsrandomthings.RobertsRandomItemsDataGenerator"
+		],
+		"Client": [
+			"io.github.roberthahagetit.robertsrandomthings.RobertsRandomItemsClient"
+		]
+	},
+	"mixins": [
+		"robertsrandomitems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
